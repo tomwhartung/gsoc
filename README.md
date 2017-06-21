@@ -40,3 +40,37 @@ cd /var/www/gsoc/github/rrajasek95/transcriber-qualification
 pip3 install -r requirements.txt
 ```
 
+# Javascript Setup
+
+Ensure `node` and `npm` are installed
+
+```
+node --version   # v4.2.6
+npm --version    # 3.5.2
+## Untested but should be ok (google for latest commands)
+sudo apt-get install nodejs
+installs nodejs
+sudo apt-get install npm
+```
+
+## Install and Run `bower`
+
+```
+sudo npm install -g bower
+bower install
+```
+
+## Setup the Javascript Files
+
+```
+sh ./static_setup.sh
+```
+
+# Run and Access App:
+
+```
+python run.py
+```
+
+- http://127.0.0.1:5000/login
+
