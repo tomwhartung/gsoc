@@ -7,7 +7,7 @@ Repo for my notes concerning mentoring for the Google Summer of Code.
 Links to the students' repos:
 
 - Leaderboard: https://github.com/saurabhima/gsoc_LEADERBOARD/
-- Transcriber Qualification" https://github.com/rrajasek95/transcriber-qualification
+- Transcriber Qualification: https://github.com/rrajasek95/transcriber-qualification
 
 # Pip3 Basics
 
