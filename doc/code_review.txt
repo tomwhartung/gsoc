@@ -1,0 +1,34 @@
+
+Hi Rishi and Saur,
+
+I took a look at the code over the weekend and in general it looks very good - I am impressed with all of your hard work!
+
+Over the past few weeks I have been a bit ill and am still trying to get caught up on my other projects, so I did not have 
+Here are some suggestions:
+
+- Add comments (at least a file header) to css/custom.css
+  - I like to add comments that say which page(s) the styles are for
+- For static files (e.g., css) in base_template.html you may want to use the url_for function instead of hard-coding the path:
+  - E.g., instead of:
+    href="../static/css/font-awesome.min.css"
+  - Try using:
+    href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+- Several of the templates define table elements:
+  - commit_donation.html
+  - credit_donation.html
+  - donor_contact_update.html
+  - donor_leaderboard.html
+  - donor_phone_contact.html
+  - log_template.html
+  - send_bulk_email_donor_compose.html
+  - send_bulk_email_donor.html
+  - send_bulk_email_merge_donor_compose.html
+  - send_bulk_email_merge_donor.html
+  - send_email_indl_donor.html
+  That is ok but many consider them to be obsolete and bad for SEO.
+  It would be nice if you could replace these table elements with something else.
+  I have heard that flexbox and the new grid css definitions work well, but I haven't yet tried them myself.
+- exception.py: I would think you would want the EntityNotFoundError class to have a body of some sort, maybe it was overlooked?
+- leaderboard.py: I would assume you would define the SECRET_KEY someplace else in production (don't forget when it's time!)
+- mail_merge_tags.json: Shouldn't that be in the static directory instead of mixed in with the .py files (for consistency)?
+
