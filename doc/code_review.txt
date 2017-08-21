@@ -3,7 +3,8 @@ Hi Rishi and Saur,
 
 I took a look at the code over the weekend and in general it looks very good - I am impressed with all of your hard work!
 
-Over the past few weeks I have been a bit ill and am still trying to get caught up on my other projects, so I did not have 
+Over the past few weeks I have been a bit ill and am still trying to get caught up on my other projects, so I did not have a chance to get it running locally as hoped.
+
 Here are some suggestions:
 
 - Add comments (at least a file header) to css/custom.css
@@ -25,10 +26,12 @@ Here are some suggestions:
   - send_bulk_email_merge_donor_compose.html
   - send_bulk_email_merge_donor.html
   - send_email_indl_donor.html
-  That is ok but many consider them to be obsolete and bad for SEO.
-  It would be nice if you could replace these table elements with something else.
+  That is "ok" but these days many people consider tables to be obsolete and bad for SEO.  So it would be nice if you could replace these table elements with something else.
   I have heard that flexbox and the new grid css definitions work well, but I haven't yet tried them myself.
-- exception.py: I would think you would want the EntityNotFoundError class to have a body of some sort, maybe it was overlooked?
+- exception.py: I would think you would want the EntityNotFoundError class to have a body of some sort, maybe that was overlooked?
 - leaderboard.py: I would assume you would define the SECRET_KEY someplace else in production (don't forget when it's time!)
-- mail_merge_tags.json: Shouldn't that be in the static directory instead of mixed in with the .py files (for consistency)?
+- mail_merge_tags.json: Shouldn't that be in the static directory (static/json) instead of mixed in with the .py files (for consistency)?
+- It would be nice if the methods in the *.py files were more consistently documented.  email_service.py looks good but the others could use work.
+
+Thanks and hope this helps!
 
