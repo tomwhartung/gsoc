@@ -1,0 +1,11 @@
+
+From email from Saur 8/14/2017:
+
+Sorry for the late reply but I was having problems uploading my code as my college has shifted to a new proxy which was creating a lot of headaches synchronising with Github, but finally the problem has been resolved. I have updated the code in Github. You need to add a configuration file to your command line which will set the environment variables for the database server. An example is:
+
+CONFIG=./dbserverconfig python leaderboard.py
+
+I am attaching the configuration file I am currently using. Also I am uploading the SQL script for you to update the database with the latest Schema and data.
+
+Please do let me know about any observations. I am still to finalize the PDF Receipt Generation and Mailing as well as working on migrating to WikiMedia Tools as told by James.
+
